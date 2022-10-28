@@ -1,0 +1,101 @@
+.container {
+  width: 100%;
+  height: 500px;
+  background-image: linear-gradient(
+      90deg,
+      #5d3ebc 0%,
+      rgba(93, 62, 188, 0) 100%
+    ),
+    url(https://cdn.getir.com/getirweb-images/common/hero-posters/getir-mainpage-2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.leftSide {
+  width: 50%;
+  height: 100%;
+  float: left;
+  position: relative;
+}
+.img {
+  position: absolute;
+  top: 19%;
+  left: 60px;
+  width: 180px;
+  height: 180px;
+}
+
+.textBox {
+  position: absolute;
+  margin-top: 320px;
+  margin-left: 60px;
+}
+
+.text {
+  color: #fff;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 40px;
+  text-shadow: rgb(0 0 0 / 10%) 0px 1px 1px;
+}
+
+.inputSide {
+  width: 50%;
+  height: 100%;
+  float: right;
+  position: relative;
+}
+
+.form {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  background-color: #fafafa;
+  gap: 0.5rem;
+  border-radius: 8px;
+  position: absolute;
+  top: 150px;
+  left: 210px;
+}
+
+.form input {
+  border: 2px solid rgba(128, 128, 128, 0.7);
+  border-radius: 4px;
+  height: 50px;
+  padding: 1rem;
+}
+
+.form input:focus {
+  outline: 2px solid #5d3ebc;
+  border: none;
+}
+
+.form button {
+  width: 90%;
+  height: 48px;
+  color: #5d3ebc;
+  font-size: 15px;
+  font-weight: 600;
+  border: none;
+  border-radius: 10px;
+  background-color: #ffd300;
+  margin-top: 8px;
+  cursor: pointer;
+}
+
+.form button:hover {
+  background-color: #5d3ebc;
+  color: #fafafa;
+  transition: 0.2s ease all;
+}
+
+@media screen and (max-width: 680px) {
+  .form {
+    display: none;
+  }
+}
